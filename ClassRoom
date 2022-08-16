@@ -1,0 +1,21 @@
+public class ClassRoom {
+
+	public static void main(String[] args) {
+		String [][] tab = new String[4][2];
+		
+		tab[0][0] = "Moaad";
+		tab[1][0] = "Anass";
+		tab[2][0] = "Abdo";
+		tab[3][0] = "Simo";
+		
+		
+		
+  for (int i = 0 ; i < tab.length ; i++) {
+	  tab[i][1] = String.valueOf((int)(Math.random()*20)) ;
+	  if( Integer.parseInt(tab[i][1]) >= 10) {
+	  System.out.println(tab[i][0] + " note is : " + tab[i][1]);
+	  }
+  }
+	}
+
+}
